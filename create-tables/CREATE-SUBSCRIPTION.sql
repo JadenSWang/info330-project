@@ -1,0 +1,5 @@
+CREATE TABLE SUBSCRIPTION (
+        subscription_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        company_prod_id INTEGER FOREIGN KEY REFERENCES COMPANY_PROD(company_prod_id) NOT NULL,
+        customer_id INTEGER FOREIGN KEY REFERENCES CUSTOMER(customer_id) NOT NULL
+)

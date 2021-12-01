@@ -1,0 +1,4 @@
+CREATE TABLE COMPANY_ROLE (
+        company_role_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        role_name VARCHAR(30) NOT NULL
+)

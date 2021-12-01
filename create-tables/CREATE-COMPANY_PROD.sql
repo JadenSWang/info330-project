@@ -1,0 +1,6 @@
+CREATE TABLE COMPANY_PROD (
+        company_prod_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        company_role_id INTEGER FOREIGN KEY REFERENCES COMPANY_ROLE(company_role_id) NOT NULL,
+        company_id INTEGER FOREIGN KEY REFERENCES COMPANY(company_id) NOT NULL,
+        production_id INTEGER FOREIGN KEY REFERENCES PRODUCTION(production_id) NOT NULL
+)

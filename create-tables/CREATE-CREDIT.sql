@@ -1,0 +1,5 @@
+CREATE TABLE CREDIT (
+        production_id INTEGER FOREIGN KEY REFERENCES PRODUCTION(production_id) NOT NULL,
+        professional_id INTEGER FOREIGN KEY REFERENCES PROFESSIONAL(professional_id) NOT NULL,
+        position_id INTEGER FOREIGN KEY REFERENCES POSITION(position_id) NOT NULL
+)
