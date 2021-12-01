@@ -1,0 +1,5 @@
+CREATE TABLE COMPANY (
+        company_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        company_name VARCHAR(256) NOT NULL,
+        country_id INTEGER FOREIGN KEY REFERENCES COUNTRY(country_id) NOT NULL
+)

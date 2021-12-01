@@ -1,0 +1,4 @@
+CREATE TABLE GENRE (
+        genre_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        genre_name VARCHAR(50) NOT NULL
+)

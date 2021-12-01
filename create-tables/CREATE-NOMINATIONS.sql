@@ -1,0 +1,6 @@
+CREATE TABLE NOMINATIONS (
+        nomination_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        award_id INTEGER FOREIGN KEY REFERENCES AWARD(award_id) NOT NULL,
+        professional_id INTEGER FOREIGN KEY REFERENCES PROFESSIONAL(professional_id) NOT NULL,
+        received BIT NOT NULL
+)

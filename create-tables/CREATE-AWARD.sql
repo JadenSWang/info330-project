@@ -1,0 +1,5 @@
+CREATE TABLE AWARD (
+        award_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        award_name VARCHAR(50) NOT NULL,
+        award_type_id INTEGER FOREIGN KEY REFERENCES AWARD_TYPE(award_type_id) NOT NULL
+)

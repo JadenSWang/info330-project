@@ -1,0 +1,4 @@
+CREATE TABLE AWARD_TYPE (
+    award_type_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+    award_type_name VARCHAR(50) NOT NULL
+)
