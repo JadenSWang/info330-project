@@ -3,7 +3,7 @@ CREATE PROCEDURE INSERT_SUBSCRIPTION
 @role_name VARCHAR(30),
 @customer_username VARCHAR(50),
 @production_name VARCHAR(256),
-@customer_dob DATE,
+@customer_dob DATE
 AS
 DECLARE @CP_ID INT, @C_ID INT
 SET @CP_ID = (

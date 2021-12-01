@@ -17,7 +17,7 @@ SET @C_ID = (
     SELECT C.company_id
     FROM COMPANY C
         JOIN COUNTRY CO ON CO.country_id = C.country_id
-    WHERE C.country_name = @country_name
+    WHERE CO.country_name = @country_name
     AND C.company_name = @company_name
 )
 SET @P_ID = (
