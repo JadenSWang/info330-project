@@ -23,4 +23,4 @@ SET
 INSERT INTO
     NOMINATION (award_id, professional_id, received)
 VALUES
-(@award_id, @professional_id, received) COMMIT TRANSACTION T1
+(@award_id, @professional_id, @received) COMMIT TRANSACTION T1

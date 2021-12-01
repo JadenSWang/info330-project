@@ -2,7 +2,7 @@ CREATE PROCEDURE INSERT_CUSTOMER (@customer_username VARCHAR(50), @customer_dob 
 AS
 DECLARE @country_id INTEGER
 BEGIN TRANSACTION T1
-    SET @country_id = SELECT country_id FROM COUNTRY WHERE country_name = @customer_country_name
+    SET @country_id = (SELECT country_id FROM COUNTRY WHERE country_name = @customer_country_name)
 
     INSERT INTO CUSTOMER (customer_username, customer_dob, customer_country_id)
     VALUES (@customer_username, @customer_dob, @country_id)
