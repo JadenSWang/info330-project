@@ -1,0 +1,9 @@
+CREATE TABLE PRODUCTION (
+        production_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        production_type_id INTEGER FOREIGN KEY REFERENCES PRODUCTION_TYPE(production_type_id) NOT NULL,
+        award_id INTEGER FOREIGN KEY REFERENCES AWARD(award_id) NOT NULL,
+        genre_id INTEGER FOREIGN KEY REFERENCES GENRE(genre_id) NOT NULL,
+        review_id INTEGER FOREIGN KEY REFERENCES REVIEW(review_id) NOT NULL,
+        rating_id INTEGER FOREIGN KEY REFERENCES RATING(rating_id) NOT NULL,
+        production_name VARCHAR(256) NOT NULL
+)

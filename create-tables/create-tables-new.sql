@@ -112,8 +112,23 @@ CREATE TABLE NOMINATIONS (
         received BIT NOT NULL
 )
 
+<<<<<<< HEAD
+CREATE TABLE REVIEW
+(
+        review_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        review VARCHAR(MAX) NOT NULL,
+        rating INTEGER NOT NULL
+);
+
+CREATE TABLE RATING (
+        rating_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        rating_name VARCHAR(50),
+        age_limit INTEGER
+)
+=======
 CREATE TABLE SUBSCRIPTION (
         subscription_id INTEGER IDENTITY(1,1) PRIMARY KEY,
         company_prod_id INTEGER FOREIGN KEY REFERENCES COMPANY_PROD(company_prod_id) NOT NULL,
         customer_id INTEGER FOREIGN KEY REFERENCES CUSTOMER(customer_id) NOT NULL
 )
+>>>>>>> f53eeffc8603821d3f0c64cadbb544b043e07226

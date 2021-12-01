@@ -1,0 +1,4 @@
+CREATE TABLE STREAM (
+        customer_id INTEGER FOREIGN KEY REFERENCES CUSTOMER(customer_id) NOT NULL,
+        production_id INTEGER FOREIGN KEY REFERENCES PRODUCTION(production_id) NOT NULL
+)
