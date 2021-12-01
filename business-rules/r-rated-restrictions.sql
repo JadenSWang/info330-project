@@ -10,7 +10,7 @@ BEGIN
       		JOIN RATING ON PRODUCTION.rating_id = RATING.rating_id
       	WHERE
       		DATEDIFF(year, CUSTOMER.customer_dob, GETDATE()) < 17
-      		AND RATING.rating_name != 'R'
+      		AND RATING.rating_name = 'R'
     )
     SET @RET = 1
     RETURN @RET
