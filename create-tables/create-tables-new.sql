@@ -119,3 +119,9 @@ CREATE TABLE REVIEW
         review VARCHAR(MAX) NOT NULL,
         rating INTEGER NOT NULL
 );
+
+CREATE TABLE RATING (
+        rating_id INTEGER IDENTITY(1,1) PRIMARY KEY,
+        rating_name VARCHAR(50),
+        age_limit INTEGER
+)
