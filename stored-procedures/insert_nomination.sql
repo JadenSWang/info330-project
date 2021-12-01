@@ -4,8 +4,9 @@ CREATE PROCEDURE INSERT_NOMINATION (
     @professional_lname VARCHAR(30),
     @professional_dob DATE,
     @received BIT
-) AS DECLARE @award_id,
-@professional_id INTEGER BEGIN TRANSACTION T1
+) 
+AS DECLARE @award_id, @professional_id INTEGER 
+BEGIN TRANSACTION T1
 SET
     @award_id = (SELECT award_id FROM AWARD WHERE award_name = @award_name)
 SET
