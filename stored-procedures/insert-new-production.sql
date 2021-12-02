@@ -1,6 +1,5 @@
 CREATE PROCEDURE NEW_PROD
 @production_type_name VARCHAR(50),
-@award_name VARCHAR(50),
 @genre_name VARCHAR(50),
 @rating_name VARCHAR(50),
 @production_name VARCHAR(256)
@@ -12,16 +11,13 @@ SET @PT_ID = (
     FROM PRODUCTION_TYPE PT
     WHERE PT.production_name = @production_type_name
 )
-SET @A_ID = (
-    SELECT A.award_id
-    FROM AWARD A
-    WHERE A.award_name = @award_name
-)
+
 SET @G_ID = (
     SELECT G.genre_id
     FROM GENRE G
     WHERE G.genre_name = @genre_name
 )
+
 SET @R_ID = (
     SELECT R.rating_id
     FROM RATING R
@@ -29,7 +25,7 @@ SET @R_ID = (
 )
 
 BEGIN TRANSACTION T1
-INSERT INTO PRODUCTION (production_type_id, award_id, genre_id, rating_id, production_name)
+INSERT INTO PRODUCTION (production_type_id, genre_id, rating_id, production_name)
 VALUES
 (@PT_ID, @A_ID, @G_ID, @R_ID, @production_name)
 COMMIT TRANSACTION T1
