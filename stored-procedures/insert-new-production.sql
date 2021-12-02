@@ -5,7 +5,7 @@ CREATE PROCEDURE NEW_PROD
 @production_name VARCHAR(256)
 AS
 DECLARE
-@PT_ID INTEGER, @A_ID INTEGER, @G_ID INTEGER, @R_ID INTEGER
+@PT_ID INTEGER, @G_ID INTEGER, @R_ID INTEGER
 SET @PT_ID = (
     SELECT PT.production_type_id
     FROM PRODUCTION_TYPE PT
@@ -25,9 +25,8 @@ SET @R_ID = (
 )
 
 BEGIN TRANSACTION T1
-INSERT INTO PRODUCTION (production_type_id, genre_id, rating_id, production_name)
-VALUES
-(@PT_ID, @A_ID, @G_ID, @R_ID, @production_name)
+INSERT INTO PRODUCTION(production_type_id, genre_id, rating_id, production_name)
+VALUES (@PT_ID, @G_ID, @R_ID, @production_name)
 COMMIT TRANSACTION T1
 
 -- EXECUTE NEW_PROD

@@ -1,8 +1,5 @@
--- INSERT INTO PRODUCTION(production_type_id, genre_id, rating_id, production_name)
--- VALUES (1, 4, 2, 'The Terminator'),
---        (1, 4, 1, 'Ready Player One'),
---        (1, 5, 1, 'Get Out'),
---        (1, 3, 1, 'Black Widow'),
---        (3, 6, 1, 'Gossip Girls')
-
-EXEC NEW_PROD 
+EXEC NEW_PROD 'Movie', 'Sci-Fi', 'R', 'The Terminator'
+EXEC NEW_PROD 'Movie', 'Sci-Fi', 'PG-13', 'Ready Player One'
+EXEC NEW_PROD 'Movie', 'Horror', 'PG-13', 'Get Out'
+EXEC NEW_PROD 'Movie', 'Action', 'PG-13', 'Black Widow'
+EXEC NEW_PROD 'TV-Show', 'Drama', 'PG-13', 'Gossip Girls'
