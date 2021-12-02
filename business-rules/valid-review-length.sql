@@ -6,7 +6,7 @@ CREATE FUNCTION fnValidReviewLength()
         IF EXISTS (
             SELECT R.review_id
             FROM REVIEW R
-            WHERE LEN(R.review) >= 10
+            WHERE LEN(R.review) < 10
         )
         SET @RET = 1
         RETURN @RET
