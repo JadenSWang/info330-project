@@ -13,4 +13,4 @@ CREATE FUNCTION fnAverageStars(@PK INT)
 GO
 
 ALTER TABLE PRODUCTION
-ADD AverageStarsForEach AS (dbo.fnAverageStars(production_id))
+ADD average_stars AS (dbo.fnAverageStars(production_id))

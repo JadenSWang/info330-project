@@ -2,14 +2,16 @@ CREATE FUNCTION fnAwardCount(@PK INT)
     RETURNS INTEGER
     AS BEGIN
         DECLARE @RET INTEGER = (
-            SELECT COUNT(A.award_id)
-            FROM PRODUCTION P
-                JOIN AWARD A ON A.award_id = P.award_id
-            WHERE P.production_id = @PK
+            SELECT COUNT(*)
+            FROM PRODUCTION_NOMINATION
+                WHERE PRODUCTION_ID = @PK
+                AND RECEIVED = 1
         )
         RETURN @RET
     END
 GO
 
 ALTER TABLE PRODUCTION
-ADD productionAwardCount AS (dbo.fnAwardCount(production_id))
+ADD award_count AS (dbo.fnAwardCount(production_id))
+
+SELECT * FROM COMPANY

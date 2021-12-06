@@ -1,0 +1,3 @@
+EXEC INSERT_ALLOWED_COUNTRIES 'Black Widow', 'Canada'
+EXEC INSERT_ALLOWED_COUNTRIES 'Black Widow', 'United States'
+EXEC INSERT_ALLOWED_COUNTRIES 'Black Widow', 'Mexico'

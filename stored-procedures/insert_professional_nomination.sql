@@ -1,11 +1,11 @@
-CREATE PROCEDURE INSERT_NOMINATION (
+CREATE PROCEDURE INSERT_PROFESSIONAL_NOMINATION (
     @award_name VARCHAR(256),
     @professional_fname VARCHAR(30),
     @professional_lname VARCHAR(30),
     @professional_dob DATE,
     @received BIT
-) 
-AS DECLARE @award_id, @professional_id INTEGER 
+)
+AS DECLARE @award_id INTEGER, @professional_id INTEGER
 BEGIN TRANSACTION T1
 SET
     @award_id = (SELECT award_id FROM AWARD WHERE award_name = @award_name)
@@ -21,6 +21,6 @@ SET
             AND professional_dob = @professional_dob
     )
 INSERT INTO
-    NOMINATION (award_id, professional_id, received)
+    PROFESSIONAL_NOMINATION (award_id, professional_id, received)
 VALUES
 (@award_id, @professional_id, @received) COMMIT TRANSACTION T1

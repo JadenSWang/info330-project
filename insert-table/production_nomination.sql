@@ -1,0 +1,2 @@
+EXEC INSERT_PRODUCTION_NOMINATIONS 'Best Picture', 'The Terminator', 0
+EXEC INSERT_PRODUCTION_NOMINATIONS 'Best Picture', 'Black Widow', 0

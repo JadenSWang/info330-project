@@ -1,0 +1,3 @@
+EXEC INSERT_SUBSCRIPTION 'Disney+', 'Jaden'
+EXEC INSERT_SUBSCRIPTION 'Disney+', 'Brian'
+EXEC INSERT_SUBSCRIPTION 'Disney+', 'Patrick'
