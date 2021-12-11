@@ -1,3 +1,5 @@
+-- alters the table SUBSCRIPTION to add the duration in days that a customer has 
+--  been a subscriber for
 -- Patrick Liu
 
 ALTER TABLE SUBSCRIPTION

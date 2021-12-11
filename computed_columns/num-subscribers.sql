@@ -1,3 +1,4 @@
+-- Creates a computed column to find the number of subscribers a company has.
 -- Selina Dinh
 
 CREATE FUNCTION fnNumSubscribers(@company_id INTEGER)

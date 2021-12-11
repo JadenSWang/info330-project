@@ -1,3 +1,4 @@
+-- computed column to find the number of award nomination that a professional received
 -- Patrick Liu
 
 CREATE FUNCTION fnCalcNumNominations(@professional_id INTEGER)

@@ -1,3 +1,4 @@
+-- Creates a computed column that find the average rating for a genre
 -- Selina Dinh
 
 CREATE FUNCTION calcAvgStarsPerGenre(@genre_id INTEGER)

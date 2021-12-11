@@ -1,3 +1,4 @@
+-- Computed column to crete a column that averages the star ratings
 -- Brian Park
 
 CREATE FUNCTION fnAverageStars(@PK INT)

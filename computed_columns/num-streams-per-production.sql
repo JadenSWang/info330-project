@@ -1,3 +1,4 @@
+-- Computed columns to find the number of streams that a production has
 -- Jaden Wang
 
 CREATE FUNCTION fnCountNumStreamed(@production_id INTEGER)
