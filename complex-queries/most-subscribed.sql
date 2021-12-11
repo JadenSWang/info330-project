@@ -1,3 +1,5 @@
+-- Jaden Wang
+
 SELECT
     COMPANY.company_name, COUNT(SUBSCRIPTION.subscription_id) AS num_subscribers
 FROM
