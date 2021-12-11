@@ -1,4 +1,5 @@
 -- Selina Dinh
+-- Business rule to ensure that a review must also have a rating
 
 CREATE FUNCTION dbo.reviewMustHaveRating()
 RETURNS INTEGER

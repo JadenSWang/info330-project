@@ -1,3 +1,7 @@
+-- Brian Park
+-- creates a business rule to ensure that a movie produced by a U.S. company
+-- cannot win a the award 'Best Foreign Award'
+
 CREATE FUNCTION fnForeignAwardUSRestriction()
 RETURNS INTEGER
 AS

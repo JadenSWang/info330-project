@@ -1,4 +1,5 @@
 -- Selina Dinh
+-- Business rule to ensure that a customer must view a production in order to rate it
 
 CREATE FUNCTION VIEW_TO_RATE () RETURNS INTEGER AS BEGIN DECLARE @RET INTEGER = 0 IF EXISTS (
     SELECT

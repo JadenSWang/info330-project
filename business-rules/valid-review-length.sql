@@ -1,4 +1,5 @@
 -- Patrick Liu
+-- Business rule that makes sure that the minimun length of a review must be 10 characters
 
 CREATE FUNCTION fnValidReviewLength()
     RETURNS INTEGER

@@ -1,5 +1,6 @@
--- Production_type 'movie' and 'short-film' can only be nominated for
--- award type ‘film’
+-- Brian Park
+-- Creates a business rule to ensure tha production_type 'movie' and 'short-film' 
+-- can only be nominated for award type ‘film’
 
 CREATE FUNCTION FilmAwardRestriction()
 RETURNS INTEGER

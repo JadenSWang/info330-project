@@ -1,3 +1,4 @@
+-- Business rule to make sure that a rating is between 1 to 5 stars
 -- Patrick Liu
 
 CREATE FUNCTION fnValidRating()
