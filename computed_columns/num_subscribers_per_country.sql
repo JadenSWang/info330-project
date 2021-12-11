@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE FUNCTION numSubscribersByCountry(@country_id INTEGER)
 RETURNS INTEGER
 AS

@@ -1,3 +1,5 @@
+-- Brian Park
+
 CREATE FUNCTION fnAwardCount(@PK INT)
     RETURNS INTEGER
     AS BEGIN
@@ -15,3 +17,4 @@ ALTER TABLE PRODUCTION
 ADD award_count AS (dbo.fnAwardCount(production_id))
 
 SELECT * FROM COMPANY
+

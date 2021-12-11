@@ -1,3 +1,5 @@
+-- Brian Park
+
 CREATE FUNCTION fnAverageStars(@PK INT)
     RETURNS INTEGER
     AS BEGIN

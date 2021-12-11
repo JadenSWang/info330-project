@@ -11,5 +11,5 @@ WHERE (
     SELECT professional_fname, professional_lname
     FROM PROFESSIONAL
     WHERE professional_fname = 'Michael'
-    AND professional_lname = 'Bae')
+    AND professional_lname = 'Bay')
 AND G.genre_name = 'Action'

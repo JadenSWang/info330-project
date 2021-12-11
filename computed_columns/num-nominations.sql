@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE FUNCTION fnCalcNumNominations(@professional_id INTEGER)
     RETURNS INTEGER
 AS

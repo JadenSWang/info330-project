@@ -1,3 +1,5 @@
+-- Selina Dinh
+
 CREATE FUNCTION fnNumSubscribers(@company_id INTEGER)
     RETURNS INTEGER
 AS

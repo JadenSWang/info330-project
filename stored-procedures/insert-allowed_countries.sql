@@ -1,3 +1,6 @@
+-- Selina Dinh
+--
+
 CREATE PROCEDURE INSERT_ALLOWED_COUNTRIES (
     @prodName VARCHAR(256),
     @country VARCHAR(50)

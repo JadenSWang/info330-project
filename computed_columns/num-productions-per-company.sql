@@ -1,3 +1,5 @@
+-- Jaden Wang
+
 CREATE FUNCTION numProdPerComp(@company_id INTEGER)
 RETURNS INTEGER
 AS

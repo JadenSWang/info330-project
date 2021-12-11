@@ -1,3 +1,5 @@
+-- Selina Dinh
+
 CREATE FUNCTION calcAvgStarsPerGenre(@genre_id INTEGER)
 RETURNS DECIMAL (2,1)
 AS

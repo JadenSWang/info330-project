@@ -1,3 +1,5 @@
+-- Jaden Wang
+
 CREATE FUNCTION fnCountNumStreamed(@production_id INTEGER)
     RETURNS INTEGER
 AS

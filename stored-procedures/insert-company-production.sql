@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE PROCEDURE INSERT_COMPANY_PRODUCTION
     @role_name VARCHAR(30),
     @company_name VARCHAR(256),
@@ -25,13 +27,3 @@ BEGIN TRANSACTION T1
     VALUES
     (@CR_ID, @C_ID, @P_ID)
 COMMIT TRANSACTION T1
-
--- EXECUTE INSERT_COMPANY_PRODUCTION
--- @role_name = '',
--- @company_name = '',
--- @country_name = '',
--- @production_type_name = '',
--- @genre_name = '',
--- @rating_name = '',
--- @production_name = ''
--- GO;

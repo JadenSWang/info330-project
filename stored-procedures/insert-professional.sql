@@ -1,3 +1,5 @@
+-- Brian Park
+
 CREATE PROCEDURE INSERT_PROFESSIONAL
     @prof_fname VARCHAR(30),
     @prof_lname VARCHAR(30),
@@ -16,3 +18,5 @@ COMMIT TRANSACTION T1
 -- @prof_dob = '',
 -- @gender = ''
 -- GO;
+
+

@@ -1,4 +1,5 @@
 -- Number of productions that won the award ‘Best picture’ that was directed by a female director
+-- Jaden Wang
 
 CREATE FUNCTION fnFemaleDirectorBestPicture(@PK VARCHAR(50))
     RETURNS VARCHAR(256)

@@ -1,3 +1,5 @@
+-- Jaden Wang 2065677
+
 CREATE PROCEDURE INSERT_REVIEW (@review VARCHAR(MAX), @customer_username VARCHAR(50), @rating_stars INTEGER, @production_name VARCHAR(256))
 AS
 DECLARE @production_id INTEGER, @review_id INTEGER, @customer_id INTEGER

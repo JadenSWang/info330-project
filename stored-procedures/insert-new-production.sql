@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE PROCEDURE NEW_PROD
 @production_type_name VARCHAR(50),
 @genre_name VARCHAR(50),

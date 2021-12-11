@@ -1,3 +1,5 @@
+-- Brian Park
+
 CREATE PROCEDURE INSERT_AWARD (@award_name VARCHAR(256), @award_type_name VARCHAR(50))
 AS
 DECLARE @award_type_id INTEGER

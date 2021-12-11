@@ -1,3 +1,5 @@
+-- Selina Dinh
+
 CREATE PROCEDURE INSERT_CUSTOMER (@customer_username VARCHAR(50), @customer_dob DATE, @customer_country_name VARCHAR(60))
 AS
 DECLARE @country_id INTEGER

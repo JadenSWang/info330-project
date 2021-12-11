@@ -1,3 +1,5 @@
+-- Selina Dinh
+
 CREATE PROCEDURE INSERT_STREAM (@customer_username VARCHAR(30), @production_name VARCHAR(256))
 AS
 BEGIN TRANSACTION T1

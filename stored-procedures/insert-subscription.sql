@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE PROCEDURE INSERT_SUBSCRIPTION
 @company_name VARCHAR(256),
 @customer_username VARCHAR(50)

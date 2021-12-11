@@ -1,3 +1,6 @@
+-- Jaden Wang 2065677
+-- Inserts a professional type award nomination given the professional's information and the award to nominate
+
 CREATE PROCEDURE INSERT_PROFESSIONAL_NOMINATION (
     @award_name VARCHAR(256),
     @professional_fname VARCHAR(30),
