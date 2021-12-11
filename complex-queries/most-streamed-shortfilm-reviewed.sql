@@ -1,5 +1,4 @@
 -- [#7] most streamed production type ‘Short film’ that has also reviewed by more than 5 people
--- [IN PROGRESS]
 SELECT TOP 1 PT.production_type_id
 FROM STREAM S
     JOIN PRODUCTION P on S.production_id = P.production_id

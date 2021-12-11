@@ -1,6 +1,5 @@
 -- Selina Dinh
 -- [#6] company with the highest number of streams
--- [NOT SUBMITTED, HAS SEP FILE]
 SELECT TOP 1 COMPANY.company_name, COUNT(*) AS num_streams  FROM COMPANY
     JOIN COMPANY_PROD ON COMPANY.company_id = COMPANY_PROD.company_id
     JOIN SUBSCRIPTION ON SUBSCRIPTION.company_prod_id = COMPANY_PROD.company_prod_id

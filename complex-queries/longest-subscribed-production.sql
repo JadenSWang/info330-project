@@ -1,5 +1,6 @@
 -- Patrick Liu
-
+-- Selects the distinct production names where the subscription
+-- days of that production is greater than 5
 SELECT DISTINCT P.production_name
 FROM SUBSCRIPTION S
     JOIN COMPANY_PROD CP ON CP.company_prod_id = S.company_prod_id

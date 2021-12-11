@@ -1,5 +1,6 @@
 -- Jaden Wang
-
+-- Selects the company name and count of subscriptions from
+-- greates to least for streaming customers
 SELECT
     COMPANY.company_name, COUNT(SUBSCRIPTION.subscription_id) AS num_subscribers
 FROM
