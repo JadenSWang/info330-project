@@ -1,7 +1,7 @@
 -- Brian Park
 -- [#3] production that has been streamed the most in the genre 'Action' that has been directed
--- by professional 'Michael Bay' that has also been produced by the company 'Marvel' and streamed
--- by Customer 'Brian'
+-- by professional 'Michael Bay' that has also been produced by the company 'Marvel Cinematic Universe'
+-- and streamed by Customer 'Brian'
 
 SELECT A.production_id, A.production_name
 FROM
