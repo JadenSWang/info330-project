@@ -1,4 +1,5 @@
 -- Jaden Wang
+-- To be compliant with child internet safety act, no child 13 and under can have a subscription
 
 CREATE FUNCTION subscriptionAgeLimit()
 RETURNS INTEGER

@@ -1,4 +1,5 @@
 -- Jaden Wang
+-- No customer under the age of 17 may view Restricted Rating Movies
 
 CREATE FUNCTION rRatedRestrictions()
 RETURNS INTEGER
