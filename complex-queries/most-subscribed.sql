@@ -1,4 +1,5 @@
 -- Jaden Wang
+-- gets company role 'Streaming' that has the most customers subscribed
 
 SELECT
     COMPANY.company_name, COUNT(SUBSCRIPTION.subscription_id) AS num_subscribers
