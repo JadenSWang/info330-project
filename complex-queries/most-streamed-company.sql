@@ -1,3 +1,4 @@
+-- Selina Dinh
 -- [#6] company with the highest number of streams
 -- [NOT SUBMITTED, HAS SEP FILE]
 SELECT TOP 1 COMPANY.company_name, COUNT(*) AS num_streams  FROM COMPANY

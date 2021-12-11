@@ -1,3 +1,4 @@
+-- Selina Dinh
 -- [#8] least reviews for production type ‘Movie’ of genre ‘Thriller’
 
 SELECT COUNT(R.review_id) AS num_review
@@ -9,4 +10,3 @@ FROM REVIEW R
 WHERE GENRE.genre_name = 'Sci-Fi'
     AND PT.production_name = 'Movie'
 ORDER BY num_review DESC
-
