@@ -1,3 +1,5 @@
+-- Selina Dinh
+
 CREATE FUNCTION dbo.reviewMustHaveRating()
 RETURNS INTEGER
 AS

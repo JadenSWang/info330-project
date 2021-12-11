@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE FUNCTION fnValidRating()
     RETURNS INTEGER
 AS

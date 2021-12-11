@@ -1,3 +1,5 @@
+-- Jaden Wang
+
 CREATE FUNCTION subscriptionAgeLimit()
 RETURNS INTEGER
 AS

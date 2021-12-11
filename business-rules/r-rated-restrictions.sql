@@ -1,3 +1,5 @@
+-- Jaden Wang
+
 CREATE FUNCTION rRatedRestrictions()
 RETURNS INTEGER
 AS

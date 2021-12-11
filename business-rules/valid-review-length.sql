@@ -1,3 +1,5 @@
+-- Patrick Liu
+
 CREATE FUNCTION fnValidReviewLength()
     RETURNS INTEGER
     AS
