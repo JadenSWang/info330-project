@@ -1,3 +1,4 @@
+-- computed column to find the number of productions per company
 -- Jaden Wang
 
 CREATE FUNCTION numProdPerComp(@company_id INTEGER)

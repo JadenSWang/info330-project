@@ -1,3 +1,4 @@
+-- creates a computed column to find the number of subscribers per country
 -- Patrick Liu
 
 CREATE FUNCTION numSubscribersByCountry(@country_id INTEGER)

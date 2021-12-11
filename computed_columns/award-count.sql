@@ -1,3 +1,4 @@
+-- Creates a computed column to find the number of awards for a production
 -- Brian Park
 
 CREATE FUNCTION fnAwardCount(@PK INT)
